@@ -93,3 +93,11 @@ header {
     background-color: rgba(0, 0, 0, 0.2);
 
 }
+
+footer {
+    padding: 10px 40px 10px 40px;
+    color: white;
+    background-color: rgb(0, 0, 0);
+    position: sticky;
+    bottom: 0;
+}
