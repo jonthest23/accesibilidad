@@ -12,7 +12,7 @@
 }
 .dropdown {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     width: 300px;
     margin-bottom: 5px;
     padding: 0px;
