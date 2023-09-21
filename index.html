@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>non-standard interactive elements</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+<header>
+    <h1>Provide meaning for non-standard interactive elements</h1>
+    <h2>Ejemplo</h2>
+        <p>los elementos interactivos no estándar son aquellos que por defecto no tienen un rol asociado, como por ejemplo un div, un span, un p, etc
+        a estos elementos, se les puede dar funcionalidad y un rol en nuestra pagina web utilizando javascript, sin embargo al hacer esto podemos hacer
+        que nuestro sitio web menos accessible para los usuarios con lector de pantalla</p>
+        <p>
+            para solucionar esto, podemos utilizar los WAI-ARIA Roles, que nos permiten darle un rol a estos elementos, para que los lectores de pantalla
+        </p>
+</header>
+<main>
+    <article style="background-color: rgba(0, 255, 0, 0.1);">
+        <div class="subtitulo">
+        <h2>Más accessible</h2>
+        <span class="material-symbols-outlined" style="color: green;">
+            done
+            </span>
+        </div>
+        <nav aria-label="navegacion principal">
+            <ul>
+                <li aria-expanded="false" aria-label="¿Que vas a cenar hoy?" class="labelDropdown" role= "button" id="menuBoton">
+                    <h4>¿Que vas a cenar hoy? </h4>
+                    <ul class="dropdown esconder" id="dropdown">
+                        <li aria-label="Arroz con pollo">Arroz con pollo</li>
+                        <li aria-label="Arroz con huevo">Arroz con huevo</li>
+                        <li aria-label="Arroz con atun">Arroz con atun</li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </article>
+
+    <article style="background-color: rgba(255, 0, 0, 0.1);">
+        <div class="subtitulo">
+            <h2>Menos accessible</h2>
+            <span class="material-symbols-outlined" style="color: red;">
+            close
+            </span>
+        </div>
+
+        <div class = "noticias" id="noticias">
+            <h4>Mira lo ultimo en noticias</h4>
+        </div>
+
+        
+    </article>
+</main>
+<script src="index.js"></script>
+</html>
