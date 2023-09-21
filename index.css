@@ -1,7 +1,7 @@
 .labelDropdown {
     list-style: none;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     width: 300px;
     margin-bottom: 5px;
     border: 1px solid black;
